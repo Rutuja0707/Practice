@@ -30,13 +30,14 @@ namespace Console_App_1._0
         {
             Console.Clear();
             Console.WriteLine("\nFunction for Addition of Two Integers\n");
-            int total, n1, n2;
+            long total, n1, n2;
             Console.WriteLine("Enter a Integer : ");
-            n1 = Convert.ToInt32(Console.ReadLine());
+            n1 = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("\nEnter another Integer : ");
-            n2 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt64(Console.ReadLine());
             total = n1 + n2;
             Console.WriteLine("Addition of Entered Digits is : {0}", total.ToString());
+            Console.ReadLine();
         }
 
         public static void Sub()
@@ -44,13 +45,14 @@ namespace Console_App_1._0
         {
             Console.Clear();
             Console.WriteLine("\nFunction for Substraction of two integers \n");
-            int total, n1, n2;
+            long total, n1, n2;
             Console.WriteLine("Enter a Integer : ");
-            n1 = Convert.ToInt32(Console.ReadLine());
+            n1 = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("\nEnter another Integer : ");
-            n2 = Convert.ToInt32(Console.ReadLine());
+            n2 = Convert.ToInt64(Console.ReadLine());
             total = n1 - n2;
             Console.WriteLine("Subtraction of Entered Digits is : {0}", total.ToString());
+            Console.ReadLine();
         }
  
         public static void Multiply()
@@ -65,6 +67,7 @@ namespace Console_App_1._0
             n2 = Convert.ToDouble(Console.ReadLine());
             total = n1 * n2;
             Console.WriteLine("Multiplication of Entered Numbers is : {0}", total.ToString());
+            Console.ReadLine();
         }
 
         public static void Division()
@@ -79,10 +82,20 @@ namespace Console_App_1._0
             n2 = Convert.ToDouble(Console.ReadLine());
             total = n1 / n2;
             Console.WriteLine("Division of Entered Numbers is : {0}", total.ToString());
+            Console.ReadLine();
         }      
+
+        public static void Student()
+            // Student Percentage Calculation
+        {
+            Console.Clear();
+            Console.WriteLine("\nEnter the following details :\n");
+
+        }
 
         public static void Main()
         {
+            Console.Clear();
             Console.WriteLine("\nApplication Development Tools");
             Console.WriteLine("\n<--------Pracitcal 1-------->");
             Console.WriteLine("\n  Select Any of the Following Function :");
@@ -91,7 +104,8 @@ namespace Console_App_1._0
             Console.WriteLine("\n3. Multiplication of Two Numbers\n\n4. Division of Two Numbers");
             Console.WriteLine("\nPress Any Other Key to Exit the Console Application.");
             int a = Convert.ToInt32(Console.ReadLine());
-            
+
+
             if(a == 1)
             {
                 Add();
@@ -110,8 +124,7 @@ namespace Console_App_1._0
             }
             else
             {
-                char b = Convert.ToChar(a);
-                Exit();
+                Exit();  
             }
         }
     }
