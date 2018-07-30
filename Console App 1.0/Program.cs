@@ -8,7 +8,7 @@ namespace Console_App_1._0
 {
     class Program
     {
-        public static void Exit()
+         public static void Exit()
         // Function to Ask to Exit the Console
         {
             Console.WriteLine("\nDo You Really Wish To Exit?\n\nY/N?");
@@ -90,7 +90,21 @@ namespace Console_App_1._0
         {
             Console.Clear();
             Console.WriteLine("\nEnter the following details :\n");
-
+            Console.WriteLine("\nEnter Marks for 1st Subject : \t");
+            long s1 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("\nEnter Marks for 2nd Subject : \t");
+            long s2 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("\nEnter Marks for 3rd Subject : \t");
+            long s3 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("\nEnter Marks for 4th Subject : \t");
+            long s4 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("\nEnter Marks for 5th Subject : \t");
+            long s5 = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("\nEnter Marks for 6th Subject : \t");
+            long s6 = Convert.ToInt64(Console.ReadLine());
+            long total = s1 + s2 + s3 + s4 + s5 + s6;
+            Console.WriteLine("\nTotal Marks Secured : \t");
+            Console.ReadLine();
         }
 
         public static void Main()
@@ -103,28 +117,34 @@ namespace Console_App_1._0
             Console.WriteLine("\n1. Addition of Two Numbers\n\n2. Subtraction of Two Numbers");
             Console.WriteLine("\n3. Multiplication of Two Numbers\n\n4. Division of Two Numbers");
             Console.WriteLine("\nPress Any Other Key to Exit the Console Application.");
-            int a = Convert.ToInt32(Console.ReadLine());
+            char a = Convert.ToChar(Console.ReadLine());
 
-
-            if(a == 1)
+            if (a >= 1 && a <= 10)
             {
-                Add();
-            }
-            if(a == 2)
-            {
-                Sub();
-            }
-            if (a == 3)
-            {
-                Multiply();
-            }
-            if(a==4)
-            {
-                Division();
+                if (a == 1)
+                {
+                    Add();
+                }
+                if (a == 2)
+                {
+                    Sub();
+                }
+                if (a == 3)
+                {
+                    Multiply();
+                }
+                if (a == 4)
+                {
+                    Division();
+                }
+                else
+                {
+                    Console.WriteLine("Please select the only number which is provided in the list");
+                }
             }
             else
             {
-                Exit();  
+                Exit();
             }
         }
     }
