@@ -85,6 +85,21 @@ namespace Console_App_1._0
             Console.ReadLine();
         }      
 
+        public static void Modulus()
+        //Function to get the remainder of the division
+        {
+            Console.Clear();
+            Console.WriteLine("\nFunction to get ramainder of the division\n");
+            int total, n1, n2;
+            Console.WriteLine("\nEnter Number One ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("\nEnter Number Two ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            total = n1 % n2;
+            Console.WriteLine("Remainder of {0} and {1} is {2}",n1.ToString(),n2.ToString(),total.ToString());
+            Console.ReadLine();
+        }
+
         public static void Student()
             // Student Percentage Calculation
         {
@@ -125,15 +140,23 @@ namespace Console_App_1._0
             Console.Clear();
             Console.WriteLine("\nApplication Development Tools");
             Console.WriteLine("\n<--------Pracitcal 1-------->");
+            //Creating a list to Select from
             Console.WriteLine("\n  Select Any of the Following Function :");
             Console.WriteLine("\n_________________________________________");
             Console.WriteLine("\n1. Addition of Two Numbers\n\n2. Subtraction of Two Numbers");
             Console.WriteLine("\n3. Multiplication of Two Numbers\n\n4. Division of Two Numbers");
             Console.WriteLine("\n5. Area of a Circle\n\n6. Percentage of a Student");
+            Console.WriteLine("\n7. Remainder");
             Console.WriteLine("\nPress Any Other Key to Exit the Console Application.");
-            int a = Convert.ToInt32(Console.ReadLine());
+            
+            //Accepting a normal string
+            string b = Console.ReadLine();
+            int d;
+            // Following converts string into an integer
+            Int32.TryParse(b, out d);
 
-            switch (a)
+            //Following code is used to create menu-driven program
+            switch (d)
             {
                 case 1:
                     Add();
@@ -152,6 +175,9 @@ namespace Console_App_1._0
                     break;
                 case 6:
                     Student();
+                    break;
+                case 7:
+                    Modulus();
                     break;
 
                 default:
