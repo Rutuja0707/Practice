@@ -12,8 +12,8 @@ namespace Console_App_1._0
         // Function to Ask to Exit the Console
         {
             Console.WriteLine("\nDo You Really Wish To Exit?\n\nY/N?");
-            char a = Convert.ToChar(Console.ReadLine());
-            if (a == 'Y' | a == 'y')
+            string a = Console.ReadLine();
+            if (a == "Y" | a == "y"|a=="Yes"|a=="yes"|a=="YES"|a=="yEs"|a=="yeS")
             {
                 Environment.Exit(0);
             }
@@ -181,7 +181,7 @@ namespace Console_App_1._0
                     break;
 
                 default:
-                    Console.WriteLine("\nWhat you wish to do?\na. Continue the Program\nb. Exit the Program");
+                    Console.WriteLine("\n\nWhat you wish to do?\na. Continue the Program\n\nb. Exit the Program");
                     char c = Convert.ToChar(Console.ReadLine());
                     if(c=='a'||c=='A')
                     {
