@@ -1,0 +1,65 @@
+﻿/* Including the padding and border to an element's total width and height */
+* 
+{
+
+    box-sizing: border-box;
+    box-sizing:padding-box;
+
+}
+
+/* Removing padding and margin from the list */
+ul 
+{
+
+    margin:0px;
+    padding:0px;
+
+}
+
+/* Styling the list items  */
+ul li
+{
+
+    cursor:pointer;
+    position:relative;
+    padding:15px 10px 15px 50px;
+    background:rgba(26, 173, 187, 0.87);
+    font:20px;
+    font-family:Playball;
+    transition:ease-in;
+
+    /* Making the List Items Unselectable */
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+
+/* Setting all odd list items to a different color (zebra-strips) */
+ul :link:nth-child(odd)
+{
+
+    background:radial-gradient(#eb182b)
+
+}
+
+/* Darker background color on mouse hover */
+ul li:hover
+{
+
+    background:radial-gradient(rgba(26, 173, 187, 0.87))
+
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li:checked
+{
+
+    background:#4cff00;
+    color:#fff;
+    text-decoration:wavy;
+
+}
+
+/* Add a "Checked" Mark when clicked on */
