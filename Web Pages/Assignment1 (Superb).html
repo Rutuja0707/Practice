@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+	<title>
+		<= Developer
+	</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="Prince Waichal.ico" rel="shortcut icon" />
+	<link rel="stylesheet" href="C:\Users\Prince\Desktop\Prince Waichal\New\material-design-icons-3.0.1\action\2x_web?Family=Material+Icons" />
+</head>
+
+<body >
+	<style>
+		/* Tooltip Container*/
+		.tooltip {
+					position:relative;
+					display:inline-block;
+					align-content:center;
+				}
+		/* Tooltip Text */
+		.tooltip .tooltiptext {
+							visibility:hidden;
+							width:auto;
+							background-color:deepskyblue;
+							color:crimson;
+							text-align:center;
+							font-family:Playball;
+							border-radius:8px;
+							position:absolute;
+							z-index:2;
+							width:140px;
+							bottom:-25px;
+							left:50px;
+							margin-left: -60px; 
+							opacity:80;							
+						}
+		/*On Hover Event Syntax*/
+		.tooltip:hover .tooltiptext {
+									visibility:visible;
+								}
+		
+	</style>
+	
+	<h1 align="center"> Assignment 1 </h1>
+	<p align="center" id="demo"> 
+		Select Color Combination for this text. 
+	<br>
+		First Color Denotes Background Color.
+	<br>
+		Second Color Denotes Foreground (Text) Color.
+	</p>
+
+	
+		<form align="center">
+			<div class="tooltip">
+				<input type="button" onclick="myFunction0()" value="Default Setup" name="button0">
+					<span class="tooltiptext">This is a tooltip</span>
+			</div>
+			
+			<div class="tooltip">
+				<input type="button" onclick="myFunction1()" value="Black and White" name="button1">
+					<span class="tooltiptext">This is tooltip</span>
+			</div>
+			
+			<div class="tooltip">
+				<input type="button" onclick="myFunction2()" value="Blue and Red" name="button2">
+					<span class="tooltiptext">This is tooltip</span>
+			</div>
+			
+			<div class="tooltip">
+				<input type="button" onclick="myFunction3()" value="Orange and Green" name="button3">
+					<span class="tooltiptext">This is tooltip</span>
+			</div>
+			
+			<div class="tooltip">
+				<input type="button" onclick="myFunction4()" value="Pink and Brown" name="button4">
+					<span class="tooltiptext">This is sample</span>
+			</div>
+		</form> 
+	
+
+	<script>
+		function myFunction0(){
+			document.getElementById("demo").style.color = "black";
+			document.getElementById("demo").style.backgroundColor = "White"}
+		function myFunction1(){
+			document.getElementById("demo").style.color = "white";
+			document.getElementById("demo").style.backgroundColor = "black"}
+		function myFunction2(){
+			document.getElementById("demo").style.color = "red";
+			document.getElementById("demo").style.backgroundColor = "skyblue";}
+		function myFunction3(){
+			document.getElementById("demo").style.color = "darkgreen";
+			document.getElementById("demo").style.backgroundColor = "orange";}
+		function myFunction4(){
+			document.getElementById("demo").style.color = "brown";
+			document.getElementById("demo").style.backgroundColor = "pink";}
+	</script>                                                                                                                                        
+
+	</body>
+</html>
+
+
